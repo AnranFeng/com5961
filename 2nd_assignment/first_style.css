@@ -1,0 +1,134 @@
+        html {
+            height:100%;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 30px;
+        }
+
+        body {
+
+        }
+
+
+        p {
+			background-color: #7F5192;
+    		font-family: arial;
+    		font-size: 25px;
+    		margin-top: 0px;
+    		margin-bottom: 0px;
+    		margin-left: 0px;
+    		margin-right: 0px;
+    		padding: 20px; 
+    		color: #E8B00C;
+    	}
+
+    	#second_p {
+    		background-color: yellow;
+    		font-family: arial;
+    		font-size: 25px;
+    		margin-top: 20px;
+    		margin-bottom: 20px;
+    		margin-left: 35px;
+    		margin-right: 35px;
+    		padding: 20px; 
+    		color: black;
+    	}
+
+    	.section_box {
+    		border:solid .5px;
+    		margin-left:35px;
+            margin-right:35px;
+    	}
+
+        ul {
+            background-color:black;
+            margin-left:35px;
+            margin-right:35px;
+            padding-top:15px;
+            padding-bottom:15px;
+        }
+
+    	ul#navbar li {
+    		display:inline;
+    		font-family: arial;
+    		font-size:20px;
+    	}
+
+        ul#navbar li a {
+            display:inline;
+            font-family: arial;
+            font-size:20px;
+            color:white;
+            padding-left:10px;
+            padding-right:10px;
+            text-decoration: none;
+        }
+        
+        ul#navbar li a:hover {
+            display:inline;
+            font-family: arial;
+            font-size:20px;
+            padding-left:10px;
+            padding-right:10px;
+            text-decoration: none;
+            background-color:#E8B00C;
+            color:black;
+        }
+        
+        .highlighted {
+            background-color:#E8B00C;
+            color:black;
+        }
+
+        .section_header {
+            background-color:grey;
+            color:white;
+            padding:10px;
+            font-family: arial;
+        }
+
+        #left_col_box {
+            position:absolute;
+            border-width:3px;
+            float: left;
+            width:46%;
+        }
+
+        #right_col_box {
+            float:right;
+            border-width:3px;
+            width:46%;
+        }
+
+        p#demo {
+            float:clear;
+        }
+        
+        #navbar {
+            margin-top:0px;
+            margin-bottom:0px;
+        }
+
+        .banner {
+            background-color: #7F5192;
+            font-family: arial;
+            font-size: 25px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 35px;
+            margin-right:35px;
+            padding: 20px; 
+            color: #E8B00C;
+        }
+
+        .container {
+            position:relative;
+            margin:0px;
+        }
+
+        #play_area {
+            clear:both;
+            position:;
+            margin-left: 35px;
+            margin-right:35px;
+        }

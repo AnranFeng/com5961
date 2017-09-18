@@ -1,0 +1,60 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>This is my 1st html for the workshop.</title>
+		<link href="first_style.css" style="text/css" rel="stylesheet">
+	</head>
+<body>
+		<div class="banner">
+			Home
+		</div>
+		<ul id="navbar">
+			<li class="highlighted"><a id="demo1" href="first_home.html">Home</a></li>
+			<li><a id="demo2" href="first_archive.html" onmouseover="banner_onmouseover()" onmouseout="banner_onmouseout">Archive</a></li>
+			<li><a id="demo3" href="first_about.html">About</a></li>
+		</ul>
+		<div class="container">
+		<div class="section_box" id="left_col_box">
+			<div class="section_header">1st Section</div>
+			<p>This is content inside the 1st section box.</p>
+		</div>
+		<div class="section_box" id="right_col_box">
+			<div class="section_header">2nd Section</div>
+			<p>This is content inside the 2nd section box.</p>
+		</div>
+		</div>
+		<h1 id="play_area">Normal.</h1>
+		<script>
+		document.getElementById("demo1").addEventListener("mouseover", mouseOver);
+		document.getElementById("demo1").addEventListener("mouseout", mouseOut);
+		document.getElementById("demo2").addEventListener("mouseover", mouseOver);
+		document.getElementById("demo2").addEventListener("mouseout", mouseOut);
+		document.getElementById("demo3").addEventListener("mouseover", mouseOver);
+		document.getElementById("demo3").addEventListener("mouseout", mouseOut);
+		
+		function mouseOver() {
+			var el = this;
+			var play_area = document.getElementById("play_area");
+			play_area.style.color = "red";
+			el.style.fontStyle = "Italic";
+			if (el == document.getElementById("demo1")) {
+				play_area.innerHTML = "Home highlighted in red!" 
+			}
+			if (el == document.getElementById("demo2")) {
+				play_area.innerHTML = "Archive highlighted in red!" 
+			}
+			if (el == document.getElementById("demo3")) {
+				play_area.innerHTML = "About highlighted in red!" 
+			}
+		}
+
+		function mouseOut() {
+			var el = this;
+			var play_area = document.getElementById("play_area");
+	    	play_area.style.color = "black";
+	    	play_area.innerHTML = "Normal." 
+	    	el.style.fontStyle = "normal";
+		}
+		</script>
+</body>
+</html>
