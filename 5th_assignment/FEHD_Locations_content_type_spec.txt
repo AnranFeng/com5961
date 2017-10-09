@@ -1,0 +1,1395 @@
+Skip to main content
+Options for the administrative overlayIf you have problems accessing administrative pages on this site, disable the overlay on your profile page.Dismiss this message.
+Content typesClose overlayPrimary tabsLIST EXPORT(ACTIVE TAB) IMPORT
+You are hereHome » Administration » Structure » Content types
+Export data
+
+$data = array(
+  'bundles' => array(
+    'fehd_locations' => (object) array(
+      'type' => 'fehd_locations',
+      'name' => 'FEHD Locations',
+      'base' => 'node_content',
+      'module' => 'node',
+      'description' => 'FEHD facility and service locations',
+      'help' => '',
+      'has_title' => '1',
+      'title_label' => 'Title',
+      'custom' => '1',
+      'modified' => '1',
+      'locked' => '0',
+      'disabled' => '0',
+      'orig_type' => 'fehd_locations',
+      'disabled_changed' => FALSE,
+      'bc_entity_type' => 'node',
+    ),
+  ),
+  'fields' => array(
+    'body' => array(
+      'entity_types' => array(
+        0 => 'node',
+      ),
+      'translatable' => '0',
+      'settings' => array(),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_body' => array(
+                'value' => 'body_value',
+                'summary' => 'body_summary',
+                'format' => 'body_format',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_body' => array(
+                'value' => 'body_value',
+                'summary' => 'body_summary',
+                'format' => 'body_format',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'table' => 'filter_format',
+          'columns' => array(
+            'format' => 'format',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'field_name' => 'body',
+      'type' => 'text_with_summary',
+      'module' => 'text',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'text',
+          'size' => 'big',
+          'not null' => FALSE,
+        ),
+        'summary' => array(
+          'type' => 'text',
+          'size' => 'big',
+          'not null' => FALSE,
+        ),
+        'format' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'page',
+          1 => 'article',
+          2 => 'customers',
+          3 => 'fehd_locations',
+          4 => 'customer_product',
+        ),
+      ),
+    ),
+    'field_address_e' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'max_length' => '255',
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_address_e' => array(
+                'value' => 'field_address_e_value',
+                'format' => 'field_address_e_format',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_address_e' => array(
+                'value' => 'field_address_e_value',
+                'format' => 'field_address_e_format',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'table' => 'filter_format',
+          'columns' => array(
+            'format' => 'format',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'field_name' => 'field_address_e',
+      'type' => 'text',
+      'module' => 'text',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'varchar',
+          'length' => '255',
+          'not null' => FALSE,
+        ),
+        'format' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'fehd_locations',
+        ),
+      ),
+    ),
+    'field_contact1' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'max_length' => '255',
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_contact1' => array(
+                'value' => 'field_contact1_value',
+                'format' => 'field_contact1_format',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_contact1' => array(
+                'value' => 'field_contact1_value',
+                'format' => 'field_contact1_format',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'table' => 'filter_format',
+          'columns' => array(
+            'format' => 'format',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'field_name' => 'field_contact1',
+      'type' => 'text',
+      'module' => 'text',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'varchar',
+          'length' => '255',
+          'not null' => FALSE,
+        ),
+        'format' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'fehd_locations',
+        ),
+      ),
+    ),
+    'field_contact2' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'max_length' => '255',
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_contact2' => array(
+                'value' => 'field_contact2_value',
+                'format' => 'field_contact2_format',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_contact2' => array(
+                'value' => 'field_contact2_value',
+                'format' => 'field_contact2_format',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'table' => 'filter_format',
+          'columns' => array(
+            'format' => 'format',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'field_name' => 'field_contact2',
+      'type' => 'text',
+      'module' => 'text',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'varchar',
+          'length' => '255',
+          'not null' => FALSE,
+        ),
+        'format' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'fehd_locations',
+        ),
+      ),
+    ),
+    'field_districtid' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'allowed_values' => array(
+          'CW' => 'Central and Western',
+          'E' => 'Eastern',
+          'S' => 'Southern',
+          'Wch' => 'Wan Chai',
+          'Is' => 'Islands',
+          'YT' => 'Yau Tsim',
+          'MK' => 'Mong Kok',
+          'SSP' => 'Sham Shui Po',
+          'KC' => 'Kowloon City',
+          'WTS' => 'Wong Tai Sin',
+          'KT' => 'Kwun Tong',
+          'TW' => 'Tsuen Wan',
+          'KwT' => 'Kwai Tsing',
+          'N' => 'North',
+          'TP' => 'Tai Po',
+          'SK' => 'Sai Kung',
+          'ST' => 'Sha Tin',
+          'TM' => 'Tuen Mun',
+          'YL' => 'Yuen Long',
+        ),
+        'allowed_values_function' => '',
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_districtid' => array(
+                'value' => 'field_districtid_value',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_districtid' => array(
+                'value' => 'field_districtid_value',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(),
+      'indexes' => array(
+        'value' => array(
+          0 => 'value',
+        ),
+      ),
+      'field_name' => 'field_districtid',
+      'type' => 'list_text',
+      'module' => 'list',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'fehd_locations',
+        ),
+      ),
+    ),
+    'field_fax' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'max_length' => '255',
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_fax' => array(
+                'value' => 'field_fax_value',
+                'format' => 'field_fax_format',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_fax' => array(
+                'value' => 'field_fax_value',
+                'format' => 'field_fax_format',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'table' => 'filter_format',
+          'columns' => array(
+            'format' => 'format',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'field_name' => 'field_fax',
+      'type' => 'text',
+      'module' => 'text',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'varchar',
+          'length' => '255',
+          'not null' => FALSE,
+        ),
+        'format' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'fehd_locations',
+        ),
+      ),
+    ),
+    'field_geolocation' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'backend' => 'default',
+        'srid' => '4326',
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_geolocation' => array(
+                'geom' => 'field_geolocation_geom',
+                'geo_type' => 'field_geolocation_geo_type',
+                'lat' => 'field_geolocation_lat',
+                'lon' => 'field_geolocation_lon',
+                'left' => 'field_geolocation_left',
+                'top' => 'field_geolocation_top',
+                'right' => 'field_geolocation_right',
+                'bottom' => 'field_geolocation_bottom',
+                'geohash' => 'field_geolocation_geohash',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_geolocation' => array(
+                'geom' => 'field_geolocation_geom',
+                'geo_type' => 'field_geolocation_geo_type',
+                'lat' => 'field_geolocation_lat',
+                'lon' => 'field_geolocation_lon',
+                'left' => 'field_geolocation_left',
+                'top' => 'field_geolocation_top',
+                'right' => 'field_geolocation_right',
+                'bottom' => 'field_geolocation_bottom',
+                'geohash' => 'field_geolocation_geohash',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(),
+      'indexes' => array(
+        'lat' => array(
+          0 => 'lat',
+        ),
+        'lon' => array(
+          0 => 'lon',
+        ),
+        'top' => array(
+          0 => 'top',
+        ),
+        'bottom' => array(
+          0 => 'bottom',
+        ),
+        'left' => array(
+          0 => 'left',
+        ),
+        'right' => array(
+          0 => 'right',
+        ),
+        'geohash' => array(
+          0 => 'geohash',
+        ),
+        'centroid' => array(
+          0 => 'lat',
+          1 => 'lon',
+        ),
+        'bbox' => array(
+          0 => 'top',
+          1 => 'bottom',
+          2 => 'left',
+          3 => 'right',
+        ),
+      ),
+      'field_name' => 'field_geolocation',
+      'type' => 'geofield',
+      'module' => 'geofield',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'geom' => array(
+          'type' => 'blob',
+          'size' => 'big',
+          'not null' => FALSE,
+        ),
+        'geo_type' => array(
+          'type' => 'varchar',
+          'default' => '',
+          'length' => 64,
+        ),
+        'lat' => array(
+          'type' => 'numeric',
+          'precision' => 18,
+          'scale' => 12,
+          'not null' => FALSE,
+        ),
+        'lon' => array(
+          'type' => 'numeric',
+          'precision' => 18,
+          'scale' => 12,
+          'not null' => FALSE,
+        ),
+        'left' => array(
+          'type' => 'numeric',
+          'precision' => 18,
+          'scale' => 12,
+          'not null' => FALSE,
+        ),
+        'top' => array(
+          'type' => 'numeric',
+          'precision' => 18,
+          'scale' => 12,
+          'not null' => FALSE,
+        ),
+        'right' => array(
+          'type' => 'numeric',
+          'precision' => 18,
+          'scale' => 12,
+          'not null' => FALSE,
+        ),
+        'bottom' => array(
+          'type' => 'numeric',
+          'precision' => 18,
+          'scale' => 12,
+          'not null' => FALSE,
+        ),
+        'geohash' => array(
+          'type' => 'varchar',
+          'length' => 16,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'fehd_locations',
+        ),
+      ),
+    ),
+    'field_google_coordinate' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'max_length' => '255',
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_google_coordinate' => array(
+                'value' => 'field_google_coordinate_value',
+                'format' => 'field_google_coordinate_format',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_google_coordinate' => array(
+                'value' => 'field_google_coordinate_value',
+                'format' => 'field_google_coordinate_format',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'table' => 'filter_format',
+          'columns' => array(
+            'format' => 'format',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'field_name' => 'field_google_coordinate',
+      'type' => 'text',
+      'module' => 'text',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'varchar',
+          'length' => '255',
+          'not null' => FALSE,
+        ),
+        'format' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'fehd_locations',
+        ),
+      ),
+    ),
+    'field_map_type' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'allowed_values' => array(
+          'bath' => 'Public Bathhouses',
+          'cc_office' => 'Cemeteries and Crematoria Offices',
+          'cemetery' => 'Public Cemeteries',
+          'crematorium' => 'Crematoria',
+          'district_offices' => 'District Environmental Hygiene Offices',
+          'hawker_bazaars' => 'Hawker Bazaars',
+          'hawker_fixpitch' => 'Major Locations of Fixed Hawker Pitches',
+          'market' => 'Public Markets / Cooked Food Markets',
+          'refuse' => 'Public Refuse Collection Points',
+          'toilet' => 'Public Toilets',
+        ),
+        'allowed_values_function' => '',
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_map_type' => array(
+                'value' => 'field_map_type_value',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_map_type' => array(
+                'value' => 'field_map_type_value',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(),
+      'indexes' => array(
+        'value' => array(
+          0 => 'value',
+        ),
+      ),
+      'field_name' => 'field_map_type',
+      'type' => 'list_text',
+      'module' => 'list',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'fehd_locations',
+        ),
+      ),
+    ),
+    'field_name_e' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'max_length' => '255',
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_name_e' => array(
+                'value' => 'field_name_e_value',
+                'format' => 'field_name_e_format',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_name_e' => array(
+                'value' => 'field_name_e_value',
+                'format' => 'field_name_e_format',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'table' => 'filter_format',
+          'columns' => array(
+            'format' => 'format',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'field_name' => 'field_name_e',
+      'type' => 'text',
+      'module' => 'text',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'varchar',
+          'length' => '255',
+          'not null' => FALSE,
+        ),
+        'format' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'fehd_locations',
+        ),
+      ),
+    ),
+    'field_openhr_e' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'max_length' => '255',
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_openhr_e' => array(
+                'value' => 'field_openhr_e_value',
+                'format' => 'field_openhr_e_format',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_openhr_e' => array(
+                'value' => 'field_openhr_e_value',
+                'format' => 'field_openhr_e_format',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'table' => 'filter_format',
+          'columns' => array(
+            'format' => 'format',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'field_name' => 'field_openhr_e',
+      'type' => 'text',
+      'module' => 'text',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'varchar',
+          'length' => '255',
+          'not null' => FALSE,
+        ),
+        'format' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'fehd_locations',
+        ),
+      ),
+    ),
+  ),
+  'instances' => array(
+    'body' => array(
+      0 => array(
+        'label' => 'Body',
+        'widget' => array(
+          'type' => 'text_textarea_with_summary',
+          'settings' => array(
+            'rows' => 20,
+            'summary_rows' => 5,
+          ),
+          'weight' => '2',
+          'module' => 'text',
+        ),
+        'settings' => array(
+          'display_summary' => TRUE,
+          'text_processing' => 1,
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'hidden',
+            'type' => 'text_default',
+            'weight' => '0',
+            'settings' => array(),
+            'module' => 'text',
+          ),
+          'teaser' => array(
+            'label' => 'hidden',
+            'type' => 'text_summary_or_trimmed',
+            'settings' => array(
+              'trim_length' => 600,
+            ),
+            'module' => 'text',
+            'weight' => 0,
+          ),
+          'full' => array(
+            'label' => 'hidden',
+            'type' => 'text_default',
+            'weight' => '0',
+            'settings' => array(),
+            'module' => 'text',
+          ),
+        ),
+        'required' => FALSE,
+        'description' => '',
+        'default_value' => NULL,
+        'field_name' => 'body',
+        'entity_type' => 'node',
+        'bundle' => 'fehd_locations',
+        'deleted' => '0',
+      ),
+    ),
+    'field_address_e' => array(
+      0 => array(
+        'label' => 'Address',
+        'widget' => array(
+          'weight' => '6',
+          'type' => 'text_textfield',
+          'module' => 'text',
+          'active' => 1,
+          'settings' => array(
+            'size' => '255',
+          ),
+        ),
+        'settings' => array(
+          'text_processing' => '0',
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'text_default',
+            'weight' => '4',
+            'settings' => array(),
+            'module' => 'text',
+          ),
+          'full' => array(
+            'label' => 'above',
+            'type' => 'text_default',
+            'weight' => '5',
+            'settings' => array(),
+            'module' => 'text',
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'default_value' => NULL,
+        'ds_extras_field_template' => '',
+        'field_name' => 'field_address_e',
+        'entity_type' => 'node',
+        'bundle' => 'fehd_locations',
+        'deleted' => '0',
+      ),
+    ),
+    'field_contact1' => array(
+      0 => array(
+        'label' => 'Contact 1',
+        'widget' => array(
+          'weight' => '7',
+          'type' => 'text_textfield',
+          'module' => 'text',
+          'active' => 1,
+          'settings' => array(
+            'size' => '60',
+          ),
+        ),
+        'settings' => array(
+          'text_processing' => '0',
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'text_default',
+            'weight' => '7',
+            'settings' => array(),
+            'module' => 'text',
+          ),
+          'full' => array(
+            'label' => 'above',
+            'type' => 'text_default',
+            'weight' => '18',
+            'settings' => array(),
+            'module' => 'text',
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'default_value' => NULL,
+        'ds_extras_field_template' => '',
+        'field_name' => 'field_contact1',
+        'entity_type' => 'node',
+        'bundle' => 'fehd_locations',
+        'deleted' => '0',
+      ),
+    ),
+    'field_contact2' => array(
+      0 => array(
+        'label' => 'contact 2',
+        'widget' => array(
+          'weight' => '8',
+          'type' => 'text_textfield',
+          'module' => 'text',
+          'active' => 1,
+          'settings' => array(
+            'size' => '60',
+          ),
+        ),
+        'settings' => array(
+          'text_processing' => '0',
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'text_default',
+            'weight' => '8',
+            'settings' => array(),
+            'module' => 'text',
+          ),
+          'full' => array(
+            'label' => 'above',
+            'type' => 'text_default',
+            'weight' => '19',
+            'settings' => array(),
+            'module' => 'text',
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'default_value' => NULL,
+        'ds_extras_field_template' => '',
+        'field_name' => 'field_contact2',
+        'entity_type' => 'node',
+        'bundle' => 'fehd_locations',
+        'deleted' => '0',
+      ),
+    ),
+    'field_districtid' => array(
+      0 => array(
+        'label' => 'District',
+        'widget' => array(
+          'weight' => '3',
+          'type' => 'options_select',
+          'module' => 'options',
+          'active' => 1,
+          'settings' => array(),
+        ),
+        'settings' => array(
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'list_default',
+            'weight' => '1',
+            'settings' => array(),
+            'module' => 'list',
+          ),
+          'full' => array(
+            'label' => 'above',
+            'type' => 'list_default',
+            'weight' => '4',
+            'settings' => array(),
+            'module' => 'list',
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'default_value' => NULL,
+        'ds_extras_field_template' => '',
+        'field_name' => 'field_districtid',
+        'entity_type' => 'node',
+        'bundle' => 'fehd_locations',
+        'deleted' => '0',
+      ),
+    ),
+    'field_fax' => array(
+      0 => array(
+        'label' => 'fax',
+        'widget' => array(
+          'weight' => '9',
+          'type' => 'text_textfield',
+          'module' => 'text',
+          'active' => 1,
+          'settings' => array(
+            'size' => '60',
+          ),
+        ),
+        'settings' => array(
+          'text_processing' => '0',
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'text_default',
+            'weight' => '9',
+            'settings' => array(),
+            'module' => 'text',
+          ),
+          'full' => array(
+            'label' => 'above',
+            'type' => 'text_default',
+            'weight' => '20',
+            'settings' => array(),
+            'module' => 'text',
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'default_value' => NULL,
+        'field_name' => 'field_fax',
+        'entity_type' => 'node',
+        'bundle' => 'fehd_locations',
+        'deleted' => '0',
+      ),
+    ),
+    'field_geolocation' => array(
+      0 => array(
+        'label' => 'geolocation',
+        'widget' => array(
+          'weight' => '12',
+          'type' => 'geofield_wkt',
+          'module' => 'geofield',
+          'active' => 1,
+          'settings' => array(
+            'geocoder_field' => 'field_google_coordinate',
+            'geocoder_handler' => 'latlon',
+            'handler_settings' => array(
+              'google' => array(
+                'geometry_type' => 'point',
+                'all_results' => 0,
+                'reject_results' => array(
+                  'APPROXIMATE' => 0,
+                  'GEOMETRIC_CENTER' => 0,
+                  'RANGE_INTERPOLATED' => 0,
+                  'ROOFTOP' => 0,
+                ),
+                'biasing' => array(
+                  'bounds' => '',
+                  'region' => '',
+                  'components' => '',
+                ),
+              ),
+            ),
+            'delta_handling' => 'default',
+          ),
+        ),
+        'settings' => array(
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'geofield_wkt',
+            'weight' => '6',
+            'settings' => array(
+              'data' => 'full',
+            ),
+            'module' => 'geofield',
+          ),
+          'full' => array(
+            'label' => 'above',
+            'type' => 'geofield_wkt',
+            'weight' => '17',
+            'settings' => array(
+              'data' => 'full',
+            ),
+            'module' => 'geofield',
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'field_name' => 'field_geolocation',
+        'entity_type' => 'node',
+        'bundle' => 'fehd_locations',
+        'deleted' => '0',
+        'default_value' => NULL,
+      ),
+    ),
+    'field_google_coordinate' => array(
+      0 => array(
+        'label' => 'Google Geo-location Coordinate',
+        'widget' => array(
+          'weight' => '11',
+          'type' => 'text_textfield',
+          'module' => 'text',
+          'active' => 1,
+          'settings' => array(
+            'size' => '60',
+          ),
+        ),
+        'settings' => array(
+          'text_processing' => '0',
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'text_default',
+            'weight' => '5',
+            'settings' => array(),
+            'module' => 'text',
+          ),
+          'full' => array(
+            'label' => 'above',
+            'type' => 'text_default',
+            'weight' => '7',
+            'settings' => array(),
+            'module' => 'text',
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'default_value' => NULL,
+        'ds_extras_field_template' => '',
+        'field_name' => 'field_google_coordinate',
+        'entity_type' => 'node',
+        'bundle' => 'fehd_locations',
+        'deleted' => '0',
+      ),
+    ),
+    'field_map_type' => array(
+      0 => array(
+        'label' => 'Facility Type',
+        'widget' => array(
+          'weight' => '4',
+          'type' => 'options_select',
+          'module' => 'options',
+          'active' => 1,
+          'settings' => array(),
+        ),
+        'settings' => array(
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'list_default',
+            'weight' => '2',
+            'settings' => array(),
+            'module' => 'list',
+          ),
+          'full' => array(
+            'label' => 'above',
+            'type' => 'list_default',
+            'weight' => '6',
+            'settings' => array(),
+            'module' => 'list',
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'default_value' => NULL,
+        'ds_extras_field_template' => '',
+        'field_name' => 'field_map_type',
+        'entity_type' => 'node',
+        'bundle' => 'fehd_locations',
+        'deleted' => '0',
+      ),
+    ),
+    'field_name_e' => array(
+      0 => array(
+        'label' => 'Name',
+        'widget' => array(
+          'weight' => '5',
+          'type' => 'text_textfield',
+          'module' => 'text',
+          'active' => 1,
+          'settings' => array(
+            'size' => '120',
+          ),
+        ),
+        'settings' => array(
+          'text_processing' => '0',
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'text_default',
+            'weight' => '3',
+            'settings' => array(),
+            'module' => 'text',
+          ),
+          'full' => array(
+            'label' => 'above',
+            'type' => 'text_default',
+            'weight' => '3',
+            'settings' => array(),
+            'module' => 'text',
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'default_value' => NULL,
+        'ds_extras_field_template' => '',
+        'field_name' => 'field_name_e',
+        'entity_type' => 'node',
+        'bundle' => 'fehd_locations',
+        'deleted' => '0',
+      ),
+    ),
+    'field_openhr_e' => array(
+      0 => array(
+        'label' => 'openHr_e',
+        'widget' => array(
+          'weight' => '10',
+          'type' => 'text_textfield',
+          'module' => 'text',
+          'active' => 1,
+          'settings' => array(
+            'size' => '60',
+          ),
+        ),
+        'settings' => array(
+          'text_processing' => '0',
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'text_default',
+            'weight' => '10',
+            'settings' => array(),
+            'module' => 'text',
+          ),
+          'full' => array(
+            'label' => 'above',
+            'type' => 'text_default',
+            'weight' => '21',
+            'settings' => array(),
+            'module' => 'text',
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'default_value' => NULL,
+        'field_name' => 'field_openhr_e',
+        'entity_type' => 'node',
+        'bundle' => 'fehd_locations',
+        'deleted' => '0',
+      ),
+    ),
+  ),
+);
+Copy the export text and paste it into another bundle using the import function.
